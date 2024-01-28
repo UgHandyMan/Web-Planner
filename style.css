@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling in small screens */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(26, 13, 171, 0.8); /* Deep blue background color */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Full width */
+    height: 100%;
+    overflow: auto; /* Enable scrolling in the container */
+}
+
+.task-input-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="date"],
+input[type="text"],
+button {
+    margin-bottom: 10px; /* Add space between inputs and button */
+}
+
+input[type="date"],
+input[type="text"] {
+    padding: 10px;
+    width: 80%; /* Adjust the width for better responsiveness */
+    border: none;
+    border-radius: 10px;
+    background-color: deepskyblue; /* Deep blue input background color */
+    color: #fff; /* White text color */
+}
+
+button {
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #512da8; /* Deep blue button background color */
+    color: #fff; /* White text color */
+}
+
+.tasks-section {
+    text-align: left;
+}
+
+.task-list {
+    max-height: 100vh; /* Adjust the max-height for better responsiveness */
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-item {
+    background-color: #e0f7fa;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label {
+    margin-left: 10px;
+} 
+
+.edit-delete-container {
+    display: flex;
+    align-items: center;
+}
+
+.edit-delete-button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #ff5252; /* Red color for delete button */
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
